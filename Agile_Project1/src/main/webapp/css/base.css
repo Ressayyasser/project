@@ -1,0 +1,42 @@
+body {
+    background-color: rgba(61, 58, 58, 0.78);
+    margin: 0;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: bisque;
+}
+body a {
+    text-decoration: none;
+    color: black;
+}
+.allLinks {
+    display: flex;
+}
+.allLinks li {
+    list-style: none;
+    margin-inline: 35px;
+}
+.greetingMessage {
+    text-align: center;
+}
+.mainSection {
+    width: 715px;
+    min-height: 500px;
+    background: rgb(255, 228, 196);
+    border-radius: 15px;
+    margin: 17px auto;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+.mainSection h3 {
+    padding: 22px;
+}
+.mainSection .firstSvg {
+    position: absolute;
+    top: 22px;
+    left: 84%;
+}

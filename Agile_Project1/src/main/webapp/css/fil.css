@@ -1,0 +1,137 @@
+.lowerSection{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    margin-inline: 15px;
+    overflow-x: auto;
+}
+.lowerSection::-webkit-scrollbar {
+    width: 10px;
+}
+.backArrowSvg {
+    position: absolute;
+    top: 22px;
+    left: 5%;
+}
+.module{
+    padding: 20px;
+    flex: 0 0 auto;
+    width: 190px;
+    background-color: #a1a9a7;
+    border-radius: 20px;
+    position: relative;
+}
+.moduleInfo {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.modName {
+    margin: 5px;
+}
+.modElement {
+    background-color: #4f4343d6;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.thirdSvg {
+    position: absolute;
+    top: 5%;
+    left: 76%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
+.modElement:hover .thirdSvg {
+    opacity: 0.5;
+}
+.fourthSvg {
+    position: absolute;
+    top: 5%;
+    left: 87%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
+.modElement:hover .fourthSvg {
+    opacity: 0.5;
+}
+.addElement {
+    background-color: #263722b3;
+    padding: 10px;
+    flex: 0 0 auto;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.addModElement {
+    background-color: #263722b3;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.modifieSvg {
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+.module:hover .modifieSvg {
+    opacity: 0.5;
+}
+.secondSvg {
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+.module:hover .secondSvg {
+    opacity: 0.5;
+}
+.blackWindow {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: fill;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.32);
+}
+.addModuleForm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 20px;
+    border: double;
+    border-color: crimson;
+}
+.addModuleFormTitle {
+    padding: 10px;
+    margin: 0;
+}
+.updateModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: fill;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.32);
+}
+.deleteModuleElementForm {
+    margin-bottom: 0 !important;
+}
